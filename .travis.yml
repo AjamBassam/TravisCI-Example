@@ -3,12 +3,7 @@ jdk:
   - openjdk11
 before_install:
   - chmod +x mvnw
-script: ./mvnw clean install
-
-jobs:
-  include:
-    - stage: Test
-      script: ./mvnw clean test
+script: mvn clean install
 
 notifications:
   email: bassam.ajam95@gmail.com
