@@ -2,7 +2,7 @@ language: java
 jdk:
   - openjdk11
 
-script: ./mvnw clean install
+script: ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 notifications:
   email: bassam.ajam95@gmail.com
